@@ -1,0 +1,23 @@
+
+main{
+    .carte{
+        border-radius: $border-radius-value;
+        color: white;
+        background-color: $primaire;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        animation: rotation 10s infinite;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+      }
+    
+      to {
+        transform: rotate(360deg);
+      }
+  }
+
