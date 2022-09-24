@@ -6,12 +6,42 @@
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  text-align: center;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
 }
-
 main {
+  padding: 0px;
+  text-align: center;
+}
+.location{
+  color: black;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+.location i {
+  margin-right: 15px;
+}
+.reservation{
+  background-color: rgb(246, 246, 246);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+button.explore-resto{
+  color: white;
+  background-color: #9356DC;
+  border: none;
+  border-radius: 10px;
   padding: 15px;
+  margin-top: 30px;
+}
+
+button.explore-resto:hover{
+  background-color: plum;
 }
 
 .fonctionnement-box {
@@ -48,11 +78,71 @@ main {
 .fonctionnement-box:hover i {
   color: #9356DC;
 }
-
 .fonctionnement h2 {
   margin-bottom: 15px;
 }
 .fonctionnement .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
+
+/*Carte avec image est nom des restaurants*/
+section.restaurant{
+  background-color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1px;
+}
+section.restaurant h2{
+  text-align: center;
+  justify-content: center;
+}
+.restaurant-box{
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+  max-width: 1000px;
+}
+section.restaurant i {
+  color: palevioletred;
+}
+.resto-align-item{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.restaurant-box p{
+  text-align: left;
+}
+/*Pied de page*/
+footer{
+  color: white;
+  background-color: black;
+}
+footer h2{
+  font-family: "Shrikhand", cursive;
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+footer p{
+  margin-left: 15px;
+  text-align: left;
+}
+.footerLineWithIcon{
+  margin-left: 15px;
+  display: flex;
+}
+
+/*Format téléphone*/
+@media screen and (max-width: 768px) {
+  section.restaurant{
+    flex-direction: column;
+  }
+  section.restaurant h2{
+    text-align: left;
+  }  
+
+}
