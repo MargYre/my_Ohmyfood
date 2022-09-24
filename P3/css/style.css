@@ -6,6 +6,11 @@
   font-family: "Roboto", sans-serif;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -82,8 +87,18 @@ h1 {
   background-color: white;
   border-radius: 20px;
   margin: 20px;
-  padding: 10px;
   width: 335px;
+  overflow: hidden;
+  position: relative;
+}
+.restaurant .restaurant-box img {
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurant .restaurant-box .restaurant-text {
+  padding: 10px;
 }
 .restaurant .restaurant-box p {
   text-align: left;
@@ -94,7 +109,14 @@ h1 {
 .restaurant .resto-align-item {
   display: flex;
   justify-content: space-between;
+}
+.restaurant span {
+  background-color: rgb(153, 226, 208);
+  color: rgb(57, 169, 142);
   padding: 5px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 
 header {
