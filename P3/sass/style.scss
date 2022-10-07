@@ -23,7 +23,6 @@ h1 {
 @import './fonctionnement';
 @import './restaurant';
 
-
 header {
     text-align: center;
 }
@@ -36,6 +35,10 @@ main {
     padding: 0px;
     text-align: center;
 }
+
+a {
+    all: unset;
+ }
 
 .location {
     color: black;
@@ -56,6 +59,7 @@ main {
 button.explore-resto {
     color: white;
     background-color: #9356DC;
+    background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
     border: none;
     border-radius: 10px;
     padding: 15px;
