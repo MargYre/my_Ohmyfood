@@ -22,6 +22,7 @@ h1 {
 @import './components/favoris';
 @import './fonctionnement';
 @import './restaurant';
+@import './components/loader';
 
 header {
     text-align: center;
@@ -61,7 +62,7 @@ button.explore-resto {
     background-color: #9356DC;
     background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 15px;
     margin-top: 30px;
 
