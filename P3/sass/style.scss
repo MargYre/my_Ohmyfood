@@ -75,6 +75,7 @@ button.explore-resto {
 footer {
     color: white;
     background-color: black;
+    padding-bottom: 20px;
 
     h2 {
         font-family: "Shrikhand", cursive;
@@ -90,6 +91,17 @@ footer {
     .footerLineWithIcon {
         margin-left: 15px;
         display: flex;
+    }
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1000px;
+        
+        >p, .footerLineWithIcon {
+            min-width: 330px;
+            margin-top: 10px;
+        }
     }
 }
 
