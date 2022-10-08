@@ -1,15 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap');
-
 $primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
+
 img {
     display: block;
     max-width: 100%;
@@ -19,28 +12,23 @@ h1 {
 }
 
 //@import './components';
+@import './font';
 @import './components/favoris';
 @import './fonctionnement';
 @import './restaurant';
 @import './components/loader';
+@import './restaurantsPages';
 
 header {
     text-align: center;
 }
-
-h1 {
-    font-family: "Shrikhand", cursive;
-}
-
 main {
     padding: 0px;
     text-align: center;
 }
-
 a {
     all: unset;
  }
-
 .location {
     color: black;
     background-color: lightgray;
@@ -51,7 +39,6 @@ a {
         margin-right: 15px;
     }
 }
-
 .reservation {
     background-color: rgb(246, 246, 246);
     padding-top: 30px;

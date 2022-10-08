@@ -171,7 +171,7 @@ h1 {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
   overflow: hidden;
-  z-index: 2;
+  z-index: 6;
   display: grid;
   place-content: center;
   -webkit-animation: disparaitre 1s;
@@ -189,8 +189,10 @@ h1 {
   border: 5px solid transparent;
   border-right: 5px solid hotpink;
   border-left: 5px solid #9356DC;
-  -webkit-animation: rotation 1s ease-in-out infinite;
-          animation: rotation 1s ease-in-out infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation: rotation 1s ease-in-out 5;
+          animation: rotation 1s ease-in-out 5;
 }
 
 @-webkit-keyframes rotation {
@@ -245,6 +247,20 @@ h1 {
   }
 }
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+main .card-plat {
+  background-color: gray;
+  border-radius: 15px;
+}
+
+header {
   text-align: center;
 }
 
@@ -294,6 +310,7 @@ button.explore-resto:hover {
 footer {
   color: white;
   background-color: black;
+  padding-bottom: 20px;
 }
 footer h2 {
   font-family: "Shrikhand", cursive;
@@ -307,6 +324,16 @@ footer p {
 footer .footerLineWithIcon {
   margin-left: 15px;
   display: flex;
+}
+footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+footer .footer-container > p, footer .footer-container .footerLineWithIcon {
+  min-width: 330px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {

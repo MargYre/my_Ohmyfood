@@ -1,0 +1,29 @@
+@import './font';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    max-width: 1000px;
+}
+main {
+    >img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .restaurant-card {
+        //z-index: 1;
+        background-color: white;
+        border-radius: 15px 15px 0px 0px;
+        //margin-top: -15px;
+        transform: translateY(-15px);
+    }
+    .card-plat {
+        background-color: gray;
+        border-radius: 10px;
+    }
+}
