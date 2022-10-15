@@ -3,29 +3,24 @@
     width: 20px;
     height: 20px;
     overflow: hidden;
+    i {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
   }
-  
-  .favoris i {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-  }
-  
   .fa-regular.fa-heart {
     z-index: 5;
-    //color:black;
-
     transition: opacity 2s linear;
-  }
-  .fa-regular.fa-heart:hover {
-    opacity: 0;
+    &:hover {
+      opacity: 0;
+    }
   }
   .fa-square-full{
     z-index: 3;
   }
-  
   .fa-solid.fa-heart {
      background-clip: text;
      -webkit-background-clip: text;
@@ -33,14 +28,12 @@
       z-index: 1;
       background-image: linear-gradient(#e66465, #9198e5);
   }
-  
   .rideau {
       color: white;
       height:15px;
       transition: all 2s;
       transition-timing-function: ease-in-out;
   }
-  
   .favoris:hover .rideau {
     top:-22px;
   }

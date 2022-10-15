@@ -10,6 +10,85 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
+.favoris {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+.favoris i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.fa-regular.fa-heart {
+  z-index: 5;
+  transition: opacity 2s linear;
+}
+.fa-regular.fa-heart:hover {
+  opacity: 0;
+}
+
+.fa-square-full {
+  z-index: 3;
+}
+
+.fa-solid.fa-heart {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: 1;
+  background-image: linear-gradient(#e66465, #9198e5);
+}
+
+.rideau {
+  color: white;
+  height: 15px;
+  transition: all 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.favoris:hover .rideau {
+  top: -22px;
+}
+
+/*Pied de page*/
+footer {
+  color: white;
+  background-color: black;
+  padding-bottom: 20px;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+footer p {
+  margin-left: 15px;
+  text-align: left;
+}
+footer .footerLineWithIcon {
+  margin-left: 15px;
+  display: flex;
+}
+footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+}
+footer .footer-container > p, footer .footer-container .footerLineWithIcon {
+  min-width: 330px;
+  margin-top: 10px;
+}
+
+.rideau {
+  color: rgb(246, 246, 246);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,6 +96,10 @@ header {
   width: 80%;
   margin: auto;
   max-width: 1000px;
+}
+header h1 {
+  width: 100%;
+  text-align: center;
 }
 
 main > img {
@@ -26,12 +109,174 @@ main > img {
      object-fit: cover;
   z-index: -1;
 }
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin-top: 20px;
+}
 main .restaurant-card {
-  background-color: white;
+  background-color: rgb(246, 246, 246) !important;
   border-radius: 15px 15px 0px 0px;
-  transform: translateY(-15px);
+  transform: translateY(-30px);
+  padding-inline: 15px;
+}
+main .restaurant-card .top-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px;
+  margin-top: 8px;
+}
+main .restaurant-card h2 {
+  font-size: 80%;
+  font-weight: 400;
+  position: relative;
+}
+main .restaurant-card h2::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: rgb(153, 226, 208);
+  bottom: -5px;
+  left: 0;
+  margin-top: 13px;
 }
 main .card-plat {
-  background-color: gray;
   border-radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: grid;
+}
+
+.card1, .card2 {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  -webkit-animation: step-display 2s ease-in-out;
+          animation: step-display 2s ease-in-out;
+}
+
+.card1:nth-child(1) {
+  -webkit-animation: step-display 0.5s ease-in-out;
+          animation: step-display 0.5s ease-in-out;
+}
+
+.card1:nth-child(2) {
+  -webkit-animation: step-display 1s ease-in-out;
+          animation: step-display 1s ease-in-out;
+}
+
+.card1:nth-child(3) {
+  -webkit-animation: step-display 1.5s ease-in-out;
+          animation: step-display 1.5s ease-in-out;
+}
+
+.card1 .card-content {
+  flex-shrink: 0;
+  flex-basis: 442px;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+.card1 .card-content .under-dish {
+  display: flex;
+  justify-content: space-between;
+}
+.card1 .card-content .under-dish b {
+  padding-right: 20px;
+}
+
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card1 .panel, .card2 .panel {
+  display: grid;
+  place-content: center;
+  height: 70px;
+  width: 50px;
+  background-color: #4edd95;
+  color: white;
+}
+
+.card1 .panel {
+  flex-shrink: 0;
+  flex-basis: 150px;
+  transition: right 0.5s ease-in-out;
+}
+
+.card2 {
+  padding-right: 0;
+}
+
+.card2 .card-content {
+  width: 60px;
+  transition: width 0.5s ease-in-out;
+}
+
+.card2 .panel {
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.card2:hover .card-content {
+  width: 290px;
+}
+
+.card2:hover .panel {
+  width: 150px;
+}
+
+.card1 .panel i, .card2 .panel i {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.card1:hover .card-content {
+  flex-basis: 290px;
+}
+
+.card1:hover .panel i, .card2:hover .panel i {
+  transform: rotate(360deg);
+}
+
+@-webkit-keyframes step-display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes step-display {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=restaurants-pages.css.map */
