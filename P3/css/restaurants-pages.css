@@ -41,7 +41,7 @@ h1 {
   -webkit-background-clip: text;
   color: transparent;
   z-index: 1;
-  background-image: linear-gradient(#e66465, #9198e5);
+  background-image: linear-gradient(#e66465, #9198e6);
 }
 
 .rideau {
@@ -109,11 +109,13 @@ main > img {
      object-fit: cover;
   z-index: -1;
 }
-main .container {
+main .menus {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   max-width: 1300px;
+  margin: auto;
   margin-top: 20px;
 }
 main .restaurant-card {
@@ -133,6 +135,7 @@ main .restaurant-card h2 {
   font-size: 80%;
   font-weight: 400;
   position: relative;
+  margin-bottom: 30px;
 }
 main .restaurant-card h2::after {
   content: "";
@@ -160,7 +163,7 @@ body {
   display: grid;
 }
 
-.card1, .card2 {
+.card-menu {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -177,32 +180,32 @@ body {
           animation: step-display 2s ease-in-out;
 }
 
-.card1:nth-child(1) {
+.card-menu:nth-child(1) {
   -webkit-animation: step-display 0.5s ease-in-out;
           animation: step-display 0.5s ease-in-out;
 }
 
-.card1:nth-child(2) {
+.card-menu:nth-child(2) {
   -webkit-animation: step-display 1s ease-in-out;
           animation: step-display 1s ease-in-out;
 }
 
-.card1:nth-child(3) {
+.card-menu:nth-child(3) {
   -webkit-animation: step-display 1.5s ease-in-out;
           animation: step-display 1.5s ease-in-out;
 }
 
-.card1 .card-content {
+.card-menu .card-content {
   flex-shrink: 0;
   flex-basis: 442px;
   overflow: hidden;
   transition: all 0.3s ease-out;
 }
-.card1 .card-content .under-dish {
+.card-menu .card-content .under-dish {
   display: flex;
   justify-content: space-between;
 }
-.card1 .card-content .under-dish b {
+.card-menu .card-content .under-dish b {
   padding-right: 20px;
 }
 
@@ -212,7 +215,7 @@ p {
   text-overflow: ellipsis;
 }
 
-.card1 .panel, .card2 .panel {
+.card-menu .panel {
   display: grid;
   place-content: center;
   height: 70px;
@@ -221,45 +224,23 @@ p {
   color: white;
 }
 
-.card1 .panel {
+.card-menu .panel {
   flex-shrink: 0;
-  flex-basis: 150px;
+  flex-basis: 80px;
   transition: right 0.5s ease-in-out;
 }
 
-.card2 {
-  padding-right: 0;
-}
-
-.card2 .card-content {
-  width: 60px;
-  transition: width 0.5s ease-in-out;
-}
-
-.card2 .panel {
-  width: 0;
-  transition: width 0.5s ease-in-out;
-}
-
-.card2:hover .card-content {
-  width: 290px;
-}
-
-.card2:hover .panel {
-  width: 150px;
-}
-
-.card1 .panel i, .card2 .panel i {
+.card-menu .panel i {
   transform: rotate(180deg);
   transition: transform 0.5s ease-in-out;
   transition-delay: 0.3s;
 }
 
-.card1:hover .card-content {
-  flex-basis: 290px;
+.card-menu:hover .card-content {
+  flex-basis: 250px;
 }
 
-.card1:hover .panel i, .card2:hover .panel i {
+.card-menu:hover .panel i {
   transform: rotate(360deg);
 }
 
