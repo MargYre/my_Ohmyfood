@@ -164,6 +164,18 @@ h1 {
   top: 15px;
   right: 15px;
 }
+.restaurant button .command {
+  color: black;
+  background-color: #9356DC;
+  background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 30px;
+}
+.restaurant button .command:hover {
+  background-color: rec;
+}
 
 #loader {
   position: fixed;
@@ -285,6 +297,7 @@ header {
 main {
   padding: 0px;
   text-align: center;
+  min-height: calc(100vh - 180px);
 }
 
 a {

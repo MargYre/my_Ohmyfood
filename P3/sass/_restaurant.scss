@@ -44,4 +44,17 @@
         top: 15px;
         right: 15px;
     }
+    button .command {
+        color: black;
+        background-color: #9356DC;
+        background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
+        border: none;
+        border-radius: 15px;
+        padding: 15px;
+        margin-top: 30px;
+    
+        &:hover {
+            background-color: rec;
+        }
+    }
 }

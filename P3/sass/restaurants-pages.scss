@@ -71,8 +71,22 @@ main {
                 margin-top: 13px;
             }
         }
+        
     }
-
+    button.command {
+            color: white;
+            background-color: #9356DC;
+            background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            margin-top: 30px;
+            margin-inline: auto;
+            display: block;
+            &:hover {
+                background-color: rec;
+            }
+        }
     .card-plat {
         border-radius: 10px;
     }

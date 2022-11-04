@@ -147,6 +147,20 @@ main .restaurant-card h2::after {
   left: 0;
   margin-top: 13px;
 }
+main button.command {
+  color: white;
+  background-color: #9356DC;
+  background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-inline: auto;
+  display: block;
+}
+main button.command:hover {
+  background-color: rec;
+}
 main .card-plat {
   border-radius: 10px;
 }
