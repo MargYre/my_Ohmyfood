@@ -102,6 +102,10 @@ header h1 {
   text-align: center;
 }
 
+button {
+  cursor: pointer;
+}
+
 main > img {
   width: 100%;
   height: 260px;
@@ -191,6 +195,7 @@ body {
   margin-bottom: 20px;
   -webkit-animation: step-display 2s ease-in-out;
           animation: step-display 2s ease-in-out;
+  cursor: pointer;
 }
 
 .card-menu:nth-child(1) {

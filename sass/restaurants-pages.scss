@@ -20,6 +20,10 @@ header {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
 main {
     >img {
         width: 100%;
@@ -121,6 +125,7 @@ body {
     overflow: hidden;
     margin-bottom: 20px;
     animation: step-display 2s ease-in-out;
+    cursor: pointer;
 }
 
 .card-menu:nth-child(1) {
