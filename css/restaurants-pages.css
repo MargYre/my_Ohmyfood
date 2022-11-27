@@ -59,6 +59,7 @@ h1 {
 footer {
   color: white;
   background-color: black;
+  padding: 25px;
   padding-bottom: 20px;
 }
 footer h2 {
@@ -80,7 +81,8 @@ footer .footer-container {
   justify-content: space-between;
   max-width: 1000px;
 }
-footer .footer-container > p, footer .footer-container .footerLineWithIcon {
+footer .footer-container > p,
+footer .footer-container .footerLineWithIcon {
   min-width: 330px;
   margin-top: 10px;
 }
@@ -106,6 +108,9 @@ button {
   cursor: pointer;
 }
 
+main {
+  background-color: rgb(246, 246, 246);
+}
 main > img {
   width: 100%;
   height: 260px;
@@ -152,14 +157,15 @@ main .restaurant-card h2::after {
 }
 main button.command {
   color: white;
-  background-color: #9356DC;
   background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
+  min-width: 150px;
   border: none;
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 15px;
   margin-top: 30px;
   margin-inline: auto;
   display: block;
+  margin-bottom: 30px;
 }
 main button.command:hover {
   background-color: rec;
@@ -196,6 +202,9 @@ body {
   -webkit-animation: step-display 2s ease-in-out;
           animation: step-display 2s ease-in-out;
   cursor: pointer;
+}
+.card-menu:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card-menu:nth-child(1) {
@@ -238,7 +247,7 @@ p {
   place-content: center;
   height: 70px;
   width: 50px;
-  background-color: red;
+  background-color: rgb(153, 226, 208);
   color: white;
 }
 

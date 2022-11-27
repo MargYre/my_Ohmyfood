@@ -114,7 +114,7 @@ h1 {
 }
 
 .restaurant {
-  background-color: lightgray;
+  background-color: rgb(246, 246, 246);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -130,12 +130,16 @@ h1 {
 }
 .restaurant .restaurant-box {
   background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   margin: 20px;
   width: 335px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
+}
+.restaurant .restaurant-box:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 .restaurant .restaurant-box img {
   width: 100%;
@@ -156,6 +160,7 @@ h1 {
 .restaurant span {
   background-color: rgb(153, 226, 208);
   color: rgb(0, 135, 102);
+  font-weight: bolder;
   padding: 10px;
   position: absolute;
   top: 15px;
@@ -261,6 +266,7 @@ h1 {
 footer {
   color: white;
   background-color: black;
+  padding: 25px;
   padding-bottom: 20px;
 }
 footer h2 {
@@ -282,7 +288,8 @@ footer .footer-container {
   justify-content: space-between;
   max-width: 1000px;
 }
-footer .footer-container > p, footer .footer-container .footerLineWithIcon {
+footer .footer-container > p,
+footer .footer-container .footerLineWithIcon {
   min-width: 330px;
   margin-top: 10px;
 }
