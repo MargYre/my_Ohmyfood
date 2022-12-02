@@ -164,7 +164,7 @@ main .restaurant-card .rectangle {
 }
 main button.command {
   color: white;
-  background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
+  background: linear-gradient(-10deg, rgb(162, 91, 219), rgb(233, 114, 218) 80%);
   min-width: 150px;
   border: none;
   border-radius: 25px;
