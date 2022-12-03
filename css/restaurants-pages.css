@@ -91,10 +91,6 @@ footer .footer-container .footerLineWithIcon {
   color: rgb(246, 246, 246);
 }
 
-* {
-  outline: 1px solid red;
-}
-
 header {
   display: flex;
   justify-content: space-between;
