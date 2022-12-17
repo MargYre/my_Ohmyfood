@@ -1,9 +1,16 @@
 @import './font';
 @import './components/favoris';
 @import './components/footer.scss';
+@import './components/btn-pricipal';
 
 .rideau {
     color: rgb(246, 246, 246);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 header {
@@ -85,23 +92,6 @@ main {
             background-color: rgb(153, 226, 208);
             margin: 0px;
             margin-bottom: 15px;
-        }
-    }
-
-    button.command {
-        color: white;
-        background: linear-gradient(-10deg, rgb(162, 91, 219), rgb(233, 114, 218) 80%);
-        min-width: 150px;
-        border: none;
-        border-radius: 25px;
-        padding: 15px;
-        margin-top: 30px;
-        margin-inline: auto;
-        display: block;
-        margin-bottom: 30px;
-
-        &:hover {
-            background-color: rec;
         }
     }
 

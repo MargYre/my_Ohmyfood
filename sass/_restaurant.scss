@@ -4,9 +4,12 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 1px;
+    padding-top: 50px;
 
-    h2 {
-        text-align: center;
+    >h2 {
+        text-align: left;
+        width: 100%;
+        padding-left: 7%;
     }
 
     .container {

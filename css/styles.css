@@ -4,6 +4,12 @@ img {
   max-width: 100%;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -119,9 +125,12 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1px;
+  padding-top: 50px;
 }
-.restaurant h2 {
-  text-align: center;
+.restaurant > h2 {
+  text-align: left;
+  width: 100%;
+  padding-left: 7%;
 }
 .restaurant .container {
   display: flex;
@@ -294,6 +303,25 @@ footer .footer-container .footerLineWithIcon {
   margin-top: 10px;
 }
 
+.btn-principal {
+  color: white;
+  background: linear-gradient(-10deg, rgb(162, 91, 219), rgb(233, 114, 218) 80%);
+  min-width: 150px;
+  border: none;
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 30px;
+  margin-inline: auto;
+  display: block;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+.btn-principal:hover {
+  background: linear-gradient(-10deg, rgb(201, 159, 236), rgb(240, 139, 226) 80%);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 header {
   text-align: center;
 }
@@ -314,8 +342,8 @@ button {
 
 .location {
   color: black;
+  box-shadow: inset 0px 13px 7px -11px rgba(0, 0, 0, 0.18);
   background-color: rgb(234, 234, 234);
-  box-shadow: 10px 10px 13px rgba(50, 50, 50, 0.75);
   display: flex;
   justify-content: center;
   padding: 15px;
@@ -328,19 +356,6 @@ button {
   background-color: rgb(246, 246, 246);
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-button.explore-resto {
-  color: white;
-  background-color: #9356DC;
-  background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
-  border: none;
-  border-radius: 15px;
-  padding: 15px;
-  margin-top: 30px;
-}
-button.explore-resto:hover {
-  background-color: rec;
 }
 
 @media screen and (min-width: 768px) {

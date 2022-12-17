@@ -8,6 +8,12 @@ img {
     max-width: 100%;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-family: 'Shrikhand', cursive;
 }
@@ -19,6 +25,7 @@ h1 {
 @import './restaurant';
 @import './components/loader';
 @import './components/footer.scss';
+@import'./components/btn-pricipal';
 
 header {
     text-align: center;
@@ -40,9 +47,8 @@ button {
 
 .location {
     color: black;
-    //background-color: lightgray;
+    box-shadow: inset 0px 13px 7px -11px rgb(0 0 0 / 18%);
     background-color: rgb(234, 234, 234);
-    box-shadow: 10px 10px 13px rgba(50, 50, 50, 0.75);
     display: flex;
     justify-content: center;
     padding: 15px;
@@ -56,20 +62,6 @@ button {
     background-color: rgb(246, 246, 246);
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-button.explore-resto {
-    color: white;
-    background-color: #9356DC;
-    background: linear-gradient(-10deg, #9356DC 10%, hotpink 60%);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    margin-top: 30px;
-
-    &:hover {
-        background-color: rec;
-    }
 }
 
 @import './tablette';
