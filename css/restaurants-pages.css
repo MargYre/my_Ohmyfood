@@ -23,34 +23,29 @@ h1 {
   width: 20px;
   height: 20px;
 }
-
-.fa-regular.fa-heart {
+.favoris .fa-regular.fa-heart {
   z-index: 5;
   transition: opacity 2s linear;
 }
-.fa-regular.fa-heart:hover {
+.favoris .fa-regular.fa-heart:hover {
   opacity: 0;
 }
-
-.fa-square-full {
+.favoris .fa-square-full {
   z-index: 3;
 }
-
-.fa-solid.fa-heart {
+.favoris .fa-solid.fa-heart {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   z-index: 1;
   background-image: linear-gradient(#e66465, #9198e6);
 }
-
-.rideau {
+.favoris .rideau {
   color: white;
   height: 15px;
   transition: all 2s;
   transition-timing-function: ease-in-out;
 }
-
 .favoris:hover .rideau {
   top: -22px;
 }
