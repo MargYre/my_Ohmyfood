@@ -17,3 +17,5 @@ Vous pouvez retrouver le brief complet [ici](https://s3-eu-west-1.amazonaws.com/
  ·Mettre en place une structure de navigation pour un site web<br>
  ·Mettre en place son environnement Front-End<br>
  ·Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+
+### Tester le projet
