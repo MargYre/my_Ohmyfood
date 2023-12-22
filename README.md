@@ -4,6 +4,7 @@
 ### Scénario
 Votre mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.
 Vous pouvez retrouver le brief complet [ici](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
+Et tester le projet ici[ici]([https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf](https://margyre.github.io/my_Ohmyfood/))
 
 ### Technologies Utilisées
  ·html<br>
@@ -17,5 +18,3 @@ Vous pouvez retrouver le brief complet [ici](https://s3-eu-west-1.amazonaws.com/
  ·Mettre en place une structure de navigation pour un site web<br>
  ·Mettre en place son environnement Front-End<br>
  ·Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
-
-### Tester le projet
