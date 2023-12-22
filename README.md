@@ -1,5 +1,6 @@
 ﻿#Transformez une maquette en site web avec HTML & CSS
 ## Dynamisez une page web avec des animations CSS
+![screen de mon projet oh my food]([http://url/to/img.png](https://github.com/MargYre/my_Ohmyfood/blob/main/assets/ohmyfood-screen.png))
 
 ### Scénario
 Votre mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.
